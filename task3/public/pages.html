@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  	<meta name="mobile-web-app-capable" content="yes">
+
+	  <title>NYSL</title>
+	  <link rel="stylesheet" href="css/style.css">
+	 
+    <script type="text/javascript" src="css/funcion.js"></script>
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	  
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  
+	  <link rel="shortcut icon" sizes="196x196" href="css/images/nysl_logo.png">
+	  <link rel="apple-touch-icon" sizes="76x76" href="css/images/nysl_logo.png">
+	  <link rel="apple-touch-icon" sizes="120x120" href="css/images/nysl_logo.png">
+	  <link rel="apple-touch-icon" sizes="152x152" href="css/images/nysl_logo.png">
+	  <link rel="icon" href="css/images/nysl_logo.png">
+</head>
+<body id="cuerpo" >
+	<div class="container" >
+	<!--Header-->
+	<header class="row fixed-top">
+		<div class="col-3"><a type="B1" onclick="$('#primero').show();$('#segundo,#tercero,#cuarto,#quinto').hide();"   ><img id="logo" src="css/images/nysl_logo.png"></a></div>
+		<div class="col-7 text-center" ><h1 id="elh1">Northside Youth Soccer League</h1></div>
+		<div class="col-2"></div>
+	</header>
+	<!--Body-->
+	<div id="pages" >
+    	<!--Informacion-->
+		<div class="row" id="primero" >      
+			<h2>Informacion</h2>
+		<div class="text">
+			<p>Tipo de instalación: Al aire libre</p>
+			<p>Información adicional: si NYSL lo considera necesario, los juegos pueden acortarse o cancelarse debido a condiciones climáticas extremas.</p>
+			<p>Por favor, dirija todas sus preguntas a: Michael Randall, Coordinador de Liga</p>
+			<p>Teléfono: (630) 690-8132</p>
+			<p>Correo electrónico: michael.randall@chisoccer.org</p>
+			</div>
+		</div>
+		
+		<!--Calendario-->
+    	<div class="row" id="segundo">
+      <h2>Fechas</h2>
+			
+		<h3 onclick="$('#september').show();$('#october').hide();">September</h3>
+			<div id="september" style="display:none">
+			<h4 onclick="$('.a').show();$('.b,.c,.d,.e').hide();">9/01</h4>
+				<div class="a" style="display:none" >
+					<div class="cont">
+					<p>Partido: U1 and U4</p>
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 9:30 a.m.</p>	
+					</div>
+				</div>
+				<div class="a" style="display:none">
+					<div class="cont">
+					<p>Partido: U3 and U2</p>
+					<p>Ubicacion: Greenbay</p>
+					<p>Time: 1:00 p.m.</p>
+					</div>
+				</div>
+			<h4 onclick="$('.a,.c,.d,.e').hide();$('.b').show();">9/08</h4>
+				<div class="b" style="display:none" >
+					<div class="cont">
+					<p>Partido: U5 and U6</p>
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 9:30 a.m.</p>
+					</div>
+				</div>
+				<div class="b" style="display:none" >
+					<div class="cont">
+					<p>Partido: U6 and U1</p>
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Time: 1:00 p.m.</p>
+					</div>
+				</div>
+			<h4 onclick="$('.a,.b,.d,.e').hide();$('.c').show();">9/15</h4>
+				<div class="c" style="display:none">
+					<div class="cont">
+					<p>Partido: U2 and U4</p>
+					<p>Ubicacion: North</p>
+						<p>Time: 9:30 a.m.</p></div>
+				</div>
+				<div class="c" style="display:none">
+					<div class="cont">
+					<p>Partido: U3 and U5</p>
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 1:00 p.m.</p>
+					</div>
+				</div>
+			<h4 onclick="$('.a,.b,.c,.e').hide();$('.d').show();">9/22</h4>
+				<div class="d" style="display:none">
+					<div class="cont">
+					<p>Partido: U1 and U3</p>
+					<p>Ubicacion: South</p>
+					<p>Time: 9:30 a.m.</p>
+					</div>
+				</div>
+				<div class="d" style="display:none">
+					<div class="cont">
+					<p>Partido: U2 and U6</p>
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 1:00 p.m.</p>
+					</div>
+				</div>
+			<h4 onclick="$('.a,.b,.c,.d').hide();$('.e').show();">9/29</h4>
+				<div class="e" style="display:none">
+					<div class="cont">
+					<p>Partido: U4 and U5</p>
+					<p>Ubicacion: Greenbay</p>
+					<p>Time: 9:30 a.m.</p>
+					</div>
+				</div>
+			</div><br>
+		<h3 onclick="$('#october').show();$('#september').hide();">October</h3>
+			<div id="october" style="display:none">
+			<h4 onclick="$('.f').show();$('.g,.h,.i').hide();">10/06</h4>
+				<div class="f" style="display:none">
+					<div class="cont">
+					<p>Partido: U2 and U5 </p>
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Time: 9:30 a.m.</p>
+					</div>
+				</div>
+				<div class="f" style="display:none">
+					<div class="cont">
+					<p>Partido: U1 and U6</p>
+					<p>Ubicacion: South</p>
+					<p>Time: 1:00 p.m.</p>
+					</div>
+				</div>
+			<h4 onclick="$('.f,.h,.i').hide();$('.g').show();">10/08</h4>
+				<div class="g" style="display:none">
+					<div class="cont">
+					<p>Partido: U3 and U4</p>
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 9:30 a.m.</p>
+					</div>
+				</div>
+				<div class="g" style="display:none">
+					<div class="cont">
+					<p>Partido: U5 and U1 </p>
+					<p>Ubicacion: Greenbay </p>
+					<p>Time: 1:00 p.m.</p>
+					</div>
+				</div>
+			<h4 onclick="$('.f,.g,.i').hide();$('.h').show();">10/20</h4>
+				<div class="h" style="display:none">
+					<div class="cont">
+					<p>Partido: U6 and U3</p>
+					<p>Ubicacion: North</p>
+					<p>Time: 9:30 a.m.</p>
+					</div>
+				</div>
+				<div class="h" style="display:none">
+					<div class="cont">
+					<p>Partido: U2 and U4 </p>
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Time: 1:00 p.m.</p>
+					</div>
+				</div>
+			<h4 onclick="$('.f,.g,.h').hide();$('.i').show();">10/27</h4>
+				<div class="i" style="display:none">
+					<div class="cont">
+					<p>Partido: U3 and U1 </p>
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 9:30 a.m.</p>
+					</div>
+				</div>
+				<div class="i" style="display:none">
+					<div class="cont">
+					<p>Partido: U5 and U6</p>
+					<p>Ubicacion: Howard A Yeager	</p>
+					<p>Time: 1:00 p.m.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Horario-->
+		<div class="row" id="tercero">
+			<h2>Horarios</h2>
+			<h3 onclick="$('#am').show();$('#pm').hide();">9:30 a.m.</h3>
+			<div  id="am" style="display:none">
+				<h4 onclick="$('.k,.l,.m,.n,.o,.p,.q,.r').hide();$('.j').show();">U1 and U4</h4>
+					<div class="j" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Fecha: 9/01</p>
+					</div>
+				</div>
+				<h4 onclick="$('.j,.l,.m,.n,.o,.p,.q,.r').hide();$('.k').show();">U5 and U6</h4>
+					<div class="k" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Fecha: 9/08</p>
+					</div>
+				</div>
+				<h4 onclick="$('.j,.k,.m,.n,.o,.p,.q,.r').hide();$('.l').show();">U2 and U4</h4>
+					<div class="l" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: North</p>
+					<p>Fecha: 9/15</p>
+					</div>
+				</div>
+				<h4 onclick="$('.j,.l,.k,.n,.o,.p,.q,.r').hide();$('.m').show();">U1 and U3</h4>
+					<div class="m" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: South</p>
+					<p>Fecha: 9/22</p>
+					</div>
+				</div>
+				<h4 onclick="$('.j,.l,.m,.k,.o,.p,.q,.r').hide();$('.n').show();">U4 and U5</h4>
+					<div class="n" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Greenbay</p>
+					<p>Fecha: 9/29	</p>
+					</div>
+				</div>
+				<h4 onclick="$('.j,.l,.m,.n,.k,.p,.q,.r').hide();$('.o').show();">U2 and U5</h4>
+					<div class="o" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Fecha: 10/06</p>
+					</div>
+				</div>
+				<h4 onclick="$('.j,.l,.m,.n,.o,.k,.q,.r').hide();$('.p').show();">U3 and U4</h4>
+					<div class="p" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Fecha: 10/08</p>
+					</div>
+				</div>
+				<h4 onclick="$('.j,.l,.m,.n,.o,.p,.k,.r').hide();$('.q').show();">U6 and U3</h4>
+					<div class="q" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: North</p>
+						<p>Fecha: 10/20</p>
+					</div>
+				</div>
+				<h4 onclick="$('.j,.l,.m,.n,.o,.p,.q,.k').hide();$('.r').show();">U3 and U1</h4>
+					<div class="r" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Fecha: 10/27	</p>
+					</div>
+				</div>
+			</div><br>
+			<h3 onclick="$('#pm').show();$('#am').hide();"> 1:00 p.m.</h3>
+			<div id="pm" style="display:none">
+				<h4 onclick="$('.t,.u,.v,.w,.x,.y,.z').hide();$('.s').show();">U3 and U2</h4>
+				<div class="s" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Greenbay</p>
+					<p>Fecha: 9/01</p>
+					</div>
+				</div>
+
+				<h4 onclick="$('.s,.u,.v,.w,.x,.y,.z').hide();$('.t').show();">U6 and U1</h4>
+				<div class="t" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Fecha: 9/08</p>
+					</div>
+				</div>
+
+				<h4 onclick="$('.t,.s,.v,.w,.x,.y,.z').hide();$('.u').show();">U3 and U5</h4>
+				<div class="u" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Fecha: 9/15</p>
+					</div>
+				</div>
+		
+				<h4 onclick="$('.t,.u,.s,.w,.x,.y,.z').hide();$('.v').show();">U2 and U6</h4>
+				<div class="v" style="display:none">
+					<div class="cont">
+						
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Fecha: 9/22</p>
+					</div>
+				</div>
+
+				<h4 onclick="$('.t,.u,.v,.s,.x,.y,.z').hide();$('.w').show();">U1 and U6</h4>
+				<div class="w" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: South</p>
+					<p>Fecha: 10/06</p>
+					</div>
+				</div>
+
+				<h4 onclick="$('.t,.u,.v,.w,.s,.y,.z').hide();$('.x').show();">U5 and U1</h4>
+				<div class="x" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Greenbay</p>
+					<p>Fecha: 10/08</p>
+					</div></div>
+
+				<h4 onclick="$('.t,.u,.v,.w,.x,.s,.z').hide();$('.y').show();">U2 and U4</h4>
+				<div class="y" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Marjorie P Hart</p>
+						<p>Fecha: 10/20</p></div>
+				</div>
+
+				<h4 onclick="$('.t,.u,.v,.w,.x,.y,.s').hide();$('.z').show();">U5 and U6</h4>
+				<div class="z" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Fecha: 10/27</p>
+					</div></div>
+			</div>	
+		</div>
+		
+		<!--Equipo-->
+		<div class="row" id="cuarto">
+		    <h2>Grupos</h2>
+      <h3 onclick="$('#equipo1').show();$('#equipo2,#equipo3,#equipo4,#equipo5,#equipo6').hide();">Equipo 1</h3>
+			
+      <div id="equipo1" style="display:none">
+		  
+	<h4 onclick="$('.U6andU1,.U1andU3,.U1andU6,.U5andU1,.U3andU1').hide();$('.U1andU4').show();">U1 and U4</h4>
+			<div class="U1andU4" class="collapse">
+				<div class="cont">
+				<p>Ubicacion: AJ Katzenmaier</p>
+				<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/01</p></div>		
+			</div>
+	<h4 onclick="$('.U1andU4,.U1andU3,.U1andU6,.U5andU1,.U3andU1').hide();$('.U6andU1').show();">U6 and U1</h4>
+			<div class="U6andU1" style="display:none">
+				<div class="cont">
+				<p>Ubicacion: Marjorie P Hart</p>
+				<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 9/08</p></div>
+			</div>
+	<h4 onclick="$('.U6andU1,.U1andU4,.U1andU6,.U5andU1,.U3andU1').hide();$('.U1andU3').show();">U1 and U3</h4>
+			<div class="U1andU3" style="display:none">
+				<div class="cont">
+					<p>Ubicacion: South</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/22</p>
+				</div>
+			</div>
+	<h4 onclick="$('.U6andU1,.U1andU3,.U1andU4,.U5andU1,.U3andU1').hide();$('.U1andU6').show();">U1 and U6</h4>
+			<div class="U1andU6" style="display:none">
+				<div class="cont">
+					<p>Ubicacion: South</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 10/06</p>
+				</div>
+				</div>
+	<h4 onclick="$('.U6andU1,.U1andU3,.U1andU6,.U1andU4,.U3andU1').hide();$('.U5andU1').show();">U5 and U1</h4>
+			<div class="U5andU1" style="display:none">
+				<div class="cont">
+					<p>Ubicacion: Greenbay</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 10/08	</p>
+				</div>
+				</div>
+	<h4 onclick="$('.U6andU1,.U1andU3,.U1andU6,.U5andU1,.U1andU4').hide();$('.U3andU1').show();">U3 and U1</h4>
+			<div class="U3andU1" style="display:none">
+				<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 10/27</p>
+				</div>
+			</div>		  
+	  </div><br>
+      <h3 onclick="$('#equipo2').show();$('#equipo1,#equipo3,#equipo4,#equipo5,#equipo6').hide();">Equipo 2</h3>
+      <div id="equipo2" style="display:none">
+		  <h4  onclick="$('.U2andU4,.U2andU6,.U2andU5,.U2andU41').hide();$('.U3andU2').show();">U3 and U2</h4>
+				<div class="U3andU2" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Greenbay</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 9/01</p>
+					</div>
+				</div>
+		  <h4  onclick="$('.U3andU2,.U2andU6,.U2andU5,.U2andU41').hide();$('.U2andU4').show();">U2 and U4</h4>
+				<div class="U2andU4" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: North</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/15</p>
+					</div>
+				</div>
+		  <h4 onclick="$('.U2andU4,.U3andU2,.U2andU5,.U2andU41').hide();$('.U2andU6').show();">U2 and U6</h4>
+				<div class="U2andU6" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 9/22</p>
+					</div>
+				</div>
+		  <h4 onclick="$('.U2andU4,.U2andU6,.U3andU2,.U2andU41').hide();$('.U2andU5').show();">U2 and U5</h4>
+				<div class="U2andU5" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 10/06</p>
+					</div>
+				</div>
+		  <h4 onclick="$('.U2andU4,.U2andU6,.U2andU5,.U3andU2').hide();$('.U2andU41').show();">U2 and U4</h4>
+				<div class="U2andU41" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 10/20</p>
+					</div>
+			</div>
+	  </div><br>
+	  <h3 onclick="$('#equipo3').show();$('#equipo2,#equipo1,#equipo4,#equipo5,#equipo6').hide();">Equipo 3</h3>
+      <div id="equipo3" style="display:none">
+		  
+ 	<h4 onclick="$('.U3andU5,.U1andU31,.U3andU4,.U6andU3,.U3andU11').hide();$('.U3andU21').show();">U3 and U2</h4>
+				<div class="U3andU21" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Greenbay</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 9/01</p>
+					</div>
+				</div>
+	<h4 onclick="$('.U3andU21,.U1andU31,.U3andU4,.U6andU3,.U3andU11').hide();$('.U3andU5').show();">U3 and U5</h4>
+				<div class="U3andU5" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 9/15</p>		
+					</div>
+				</div>
+	<h4 onclick="$('.U3andU5,.U3andU21,.U3andU4,.U6andU3,.U3andU11').hide();$('.U1andU31').show();">U1 and U3</h4>
+				<div class="U1andU31" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: South</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/22</p>
+					</div>
+				</div>
+	<h4 onclick="$('.U3andU5,.U1andU31,.U3andU21,.U6andU3,.U3andU11').hide();$('.U3andU4').show();">U3 and U4</h4>
+				<div class="U3andU4" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 10/08</p>
+					</div>
+				</div>
+	<h4 onclick="$('.U3andU5,.U1andU31,.U3andU4,.U3andU21,.U3andU11').hide();$('.U6andU3').show();">U6 and U3</h4>
+				<div class="U6andU3" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 10/20</p>
+					</div>
+				</div>
+	<h4 onclick="$('.U3andU5,.U1andU31,.U3andU4,.U6andU3,.U3andU21').hide();$('.U3andU11').show();">U3 and U1</h4>
+				<div class="U3andU11" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 10/27</p>
+					</div>
+				</div>	
+		</div><br>
+	  <h3 onclick="$('#equipo4').show();$('#equipo2,#equipo3,#equipo1,#equipo5,#equipo6').hide();">Equipo 4</h3>
+      <div id="equipo4" style="display:none">
+		  <h4 onclick="$('.U2andU41,.U4andU5,.U3andU41,.U2andU42').hide();$('.U1andU41').show();">U1 and U4</h4>
+				<div class="U1andU41" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/01</p>
+					</div>
+				</div>
+		  <h4 onclick="$('.U1andU41,.U4andU5,.U3andU41,.U2andU42').hide();$('.U2andU41').show();">U2 and U4</h4>
+				<div class="U2andU41" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: North</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/15</p>
+					</div>
+				</div>
+		  <h4 onclick="$('.U2andU41,.U1andU41,.U3andU41,.U2andU42').hide();$('.U4andU5').show();">U4 and U5</h4>
+		  		<div class="U4andU5" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Greenbay</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/29</p>
+					</div>
+				</div>
+		  <h4 onclick="$('.U2andU41,.U4andU5,.U1andU41,.U2andU42').hide();$('.U3andU41').show();">U3 and U4</h4>
+				<div class="U3andU41" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 10/08</p>
+					</div>
+				</div>
+		  <h4 onclick="$('.U2andU41,.U4andU5,.U3andU41,.U1andU41').hide();$('.U2andU42').show();">U2 and U4</h4>
+				<div class="U2andU42" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 10/20</p>
+					</div>
+				</div>
+		</div><br>
+	  <h3 onclick="$('#equipo5').show();$('#equipo2,#equipo3,#equipo4,#equipo1,#equipo6').hide();">Equipo 5</h3>
+      <div id="equipo5" style="display:none">
+<h4 onclick="$('.U3andU51,.U4andU51,.U2andU51,.U5andU11,.U5andU62').hide();$('.U5andU6').show();">U5 and U6</h4>
+				<div class="U5andU6" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/08</p>
+					</div>
+				</div>
+<h4 onclick="$('.U5andU6,.U4andU51,.U2andU51,.U5andU11,.U5andU62').hide();$('.U3andU51').show();" >U3 and U5</h4>
+				<div class="U3andU51" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 9/15</p>	
+					</div>
+				</div>
+<h4 onclick="$('.U3andU51,.U5andU6,.U2andU51,.U5andU11,.U5andU62').hide();$('.U4andU51').show();">U4 and U5</h4>
+				<div class="U4andU51" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Greenbay</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/29</p>
+					</div>
+				</div>
+<h4 onclick="$('.U3andU51,.U4andU51,.U5andU6,.U5andU11,.U5andU62').hide();$('.U2andU51').show();">U2 and U5</h4>
+				<div class="U2andU51" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 10/06</p>
+					</div>
+				</div>
+<h4 onclick="$('.U3andU51,.U4andU51,.U2andU51,.U5andU6,.U5andU62').hide();$('.U5andU11').show();">U5 and U1</h4>
+				<div class="U5andU11" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Greenbay</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 10/08	</p>
+					</div>
+				</div>
+<h4 onclick="$('.U3andU51,.U4andU51,.U2andU51,.U5andU11,.U5andU6').hide();$('.U5andU62').show();">U5 and U6</h4>
+				<div class="U5andU62" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 10/27</p>
+					</div>
+				</div>
+		</div><br>
+	  <h3 onclick="$('#equipo6').show();$('#equipo2,#equipo3,#equipo4,#equipo5,#equipo1').hide();">Equipo 6</h3>
+      <div id="equipo6" style="display:none">
+		   <h4 onclick="$('#U6andU1,#U2andU6,#U6andU3,#U5andU61').hide();$('#U5andU6').show();">U5 and U6</h4>
+				<div id="U5andU6" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 9/08</p>
+					</div>
+				</div>
+		   <h4 onclick="$('#U5andU6,#U2andU6,#U6andU3,#U5andU61').hide();$('#U6andU1').show();">U6 and U1</h4>
+				<div id="U6andU1" style="display:none">
+					<div class="cont">
+					<p>Fecha: 9/08</p>
+					<p>Ubicacion: Marjorie P Hart</p>
+					<p>Time: 1:00 p.m.</p>
+					</div>
+				</div>
+		   <h4 onclick="$('#U6andU1,#U5andU6,#U6andU3,#U5andU61').hide();$('#U2andU6').show();">U2 and U6</h4>
+				<div id="U2andU6" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 9/22</p>
+					</div>
+				</div>
+		   <h4 onclick="$('#U6andU1,#U2andU6,.U5andU6,#U5andU61').hide();$('#U6andU3').show();">U6 and U3</h4>
+				<div id="U6andU3" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: AJ Katzenmaier</p>
+					<p>Time: 9:30 a.m.</p>
+					<p>Fecha: 10/20</p>
+					</div>
+			</div>
+		   <h4 onclick="$('#U6andU1,#U2andU6,#U6andU3,#U5andU6').hide();$('#U5andU61').show();">U5 and U6</h4>
+				<div id="U5andU61" style="display:none">
+					<div class="cont">
+					<p>Ubicacion: Howard A Yeager</p>
+					<p>Time: 1:00 p.m.</p>
+					<p>Fecha: 10/27</p>
+					</div>
+				</div>	
+		
+		</div><br>
+	
+	</div>
+		
+		<!--Ubicacion-->
+		<div class="row" id="quinto">
+		<h2>Ubicaciones</h2>
+
+			<h3 onclick="$('#greenbay,#hay,#mph,#north,#south').hide();$('#ajk').show();">AJ Katzenmaier </h3>
+			<div id="ajk" style="display:none">
+		 		<h4 onclick="$('#ajk1').show();">24 W. Walton St., Chicago, IL 60610</h4>
+				<div id="ajk1" style="display:none">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m19!1m12!1m3!1d2969.6540604261627!2d-87.63123908505526!3d41.900296372004725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m4!3e6!4m0!4m1!2s24+W.+Walton+St.%2C+Chicago%2C+IL+60610!5e0!3m2!1ses-419!2sar!4v1553643764298"  style="border:solid 2px green" allowfullscreen></iframe>		
+				</div>
+			</div>
+
+			<h3 onclick="$('#ajk,#hay,#mph,#north,#south').hide();$('#greenbay').show();">Greenbay </h3>
+			<div id="greenbay" style="display:none">
+				<h4 onclick="$('#greenbay1').show();">1734 N. Orleans St., Chicago, IL 60614</h4>
+				<div id="greenbay1" style="display:none">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256986745426!2d-87.64002798505479!3d41.91380627115881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1553644052397"  style="border:solid 2px green" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<h3 onclick="$('#greenbay,#ajk,#mph,#north,#south').hide();$('#hay').show();">Howard A Yeager </h3>
+			<div id="hay" style="display:none">
+				<h4 onclick="$('#hay1').show();">2245 N. Southport Ave., Chicago, IL 60614</h4>
+				<div id="hay1" style="display:none">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846845!2d-87.66511458505448!3d41.92326857056615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1553644011011" style="border:solid 2px green" allowfullscreen></iframe>
+				</div>
+			</div>
+		
+			<h3 onclick="$('#greenbay,#hay,#ajk,#north,#south').hide();$('#mph').show();">Marjorie P Hart </h3>
+			<div id="mph" style="display:none">
+				<h4 onclick="$('#mph1').show();">2625 N. Orchard St., Chicago, IL 60614</h4>
+				<div id="mph1" style="display:none">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.291728953083!2d-87.64808628505428!3d41.92958227017081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1553643977351" style="border:solid 2px green" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<h3 onclick="$('#greenbay,#hay,#mph,#ajk,#south').hide();$('#north').show();">North </h3>
+			<div id="north" style="display:none">
+				<h4 onclick="$('#north1').show();">1409 N. Ogden Ave., Chicago, IL 60610</h4>
+				<div id="north1" style="display:none">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3376141596!2d-87.64837698505508!3d41.90710047157878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af0e6ccc3%3A0x26c81c1d557667da!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1553644109271"  style="border:solid 2px green" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<h3 onclick="$('#greenbay,#hay,#mph,#north,#ajk').hide();$('#south').show();">South </h3>
+			<div id="south" style="display:none">
+				<h4 onclick="$('#south1').show();">2101 N. Fremont St., Chicago, IL 60614</h4>
+				<div id="south1" style="display:none">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7477648265644!2d-87.65355538505459!3d41.91978077078475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Fremont+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1553644146365" style="border:solid 2px green" allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div>
+  	</div>
+
+	<!--naver-->
+	<div>
+		<nav >
+		<ul id="nave">
+			<div class="col-sm-3"><li>
+				<a type="B2" onclick="$('#segundo').show();$('#primero,#tercero,#cuarto,#quinto').hide();" >
+					<img src="css/images/fecha.png" class="image">
+				</a>
+			</li></div>
+			<div class="col-sm-3"><li><a type="B3" onclick="$('#tercero').show();$('#primero,#segundo,#cuarto,#quinto').hide();" >
+					<img src="css/images/horario.png" class="image">
+				</a>
+</li></div>
+			<div class="col-sm-3"><li>
+				<a type="B4" onclick="$('#cuarto').show();$('#primero,#tercero,#segundo,#quinto').hide();" >
+					<img src="css/images/equipo.png" class="image">
+				</a>
+</li></div>
+			<div class="col-sm-3"><li>
+				<a type="B5" onclick="$('#quinto').show();$('#primero,#tercero,#cuarto,#segundo').hide();" >
+					<img src="css/images/lugar.png" class="image">
+				</a>
+</li></div>
+		</ul>
+    </nav>
+	</div>
+	</div>
+	<!--Bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
